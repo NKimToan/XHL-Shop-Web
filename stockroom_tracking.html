@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="./assets/image/logo.png">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/stockroom_tracking.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quản lý kho hàng-Theo dõi hàng tồn kho</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/image/logo.png" alt="Ảnh logo" class="header__logo--detail">
+        </div>
+        <div class="header__name">
+            <h1 class="header__name--common">CỬA HÀNG VẬT LIỆU XÂY DỰNG</h1>
+            <h1 class="header__name--store"><b>XUÂN HỒNG LY</b></h1>
+        </div>
+        <div class="header__user">
+            <i class="header__user--logo fa-regular fa-circle-user"></i>
+            <h3 class="header__user--name">Admin</h3>
+        </div>
+    </header>
+    <div class="main">
+        <div class="home">
+            <div class="home__head">
+                <a href="/47K212.05/home.html" class="home__head--link">
+                    <h2 class="home__head--name">Trang chủ</h2>
+                </a>
+                    <i class="home__head--icon fa-solid fa-chevron-right"></i>
+                    <h2 class="home__head--page">Quản lý kho hàng</h2>
+            </div>
+            <div class="home__stockroom">
+                <a href="/47K212.05/stockroom_list.html" class="home__stockroom--link">
+                    <b class="home__stockroom--content">
+                        Quản lý kho hàng
+                    </b>
+                </a>
+            </div>
+            <div class="home__order">
+                <a href="/47K212.05/order_list.html" class="home__order--link">
+                    <b class="home__order--content">
+                        Quản lý đơn hàng
+                    </b>
+                </a>
+            </div>
+            <div class="home__finance">
+                <a href="/47K212.05/finance_sale.html" class="home__finance--link">
+                    <b class="home__finance--content">
+                        Quản lý tài chính
+                    </b>
+                </a>
+            </div>
+        </div>
+        <div class="information">
+            <navbar class="menu">
+                <div class="menu__list">
+                    <a href="/47K212.05/stockroom_list.html" class="menu__link">
+                        Danh mục hàng hóa
+                    </a>
+                </div>
+                <div class="menu__putin">
+                    <a href="/47K212.05/stockroom_putin.html" class="menu__link">
+                        Nhập hàng vào
+                    </a>
+                </div>
+                <div class="menu__list-price">
+                    <a href="/47K212.05/stockroom_list-price.html" class="menu__link">
+                        Niêm yết giá
+                    </a>
+                </div>
+                <div class="menu__tracking">
+                    <a href="/47K212.05/stockroom_tracking.html" class="menu__link">
+                        Theo dõi hàng tồn kho
+                    </a>
+                </div>
+            </navbar>
+            <table class="content">
+                <thead class="content__title">
+                    <tr>
+                        <th class="content__title--id">Mã hàng</th>
+                        <th class="content__title--startdate">Ngày nhập vào</th>
+                        <th class="content__title--getdate">Ngày hiện tại</th>
+                        <th class="content__title--sum">Tổng số lượng</th>
+                    </tr>
+                </thead>
+                <tbody class="content__detail">
+                    <tr>
+                        <td>*00001</td>
+                        <td>15/04/2023</td>
+                        <td>06/05/2023</td>
+                        <td>22000 viên</td>
+                    </tr>
+                    <tr>
+                        <td>*00002</td>
+                        <td>18/04/2023</td>
+                        <td>06/05/2023</td>
+                        <td>275 bao</td>
+                    </tr>
+                    <tr>
+                        <td>*00003</td>
+                        <td>20/04/2023</td>
+                        <td>06/05/2023</td>
+                        <td>180 kg</td>
+                    </tr>
+                    <tr>
+                        <td>*00004</td>
+                        <td>20/04/2023</td>
+                        <td>06/05/2023</td>
+                        <td>900m³</td>
+                    </tr>
+                    <tr>
+                        <td>*00005</td>
+                        <td>23/04/2023</td>
+                        <td>06/05/2023</td>
+                        <td>400m³</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="./assets/image/logo.png">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/order_change.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quản lý đơn hàng-Xóa, sửa đơn hàng</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/image/logo.png" alt="Ảnh logo" class="header__logo--detail">
+        </div>
+        <div class="header__name">
+            <h1 class="header__name--common">CỬA HÀNG VẬT LIỆU XÂY DỰNG</h1>
+            <h1 class="header__name--store"><b>XUÂN HỒNG LY</b></h1>
+        </div>
+        <div class="header__user">
+            <i class="header__user--logo fa-regular fa-circle-user"></i>
+            <h3 class="header__user--name">Admin</h3>
+        </div>
+    </header>
+    <div class="main">
+        <div class="home">
+            <div class="home__head">
+                <a href="/47K212.05/home.html" class="home__head--link">
+                    <h2 class="home__head--name">Trang chủ</h2>
+                </a>
+                    <i class="home__head--icon fa-solid fa-chevron-right"></i>
+                    <h2 class="home__head--page">Quản lý đơn hàng</h2>
+            </div>
+            <div class="home__stockroom">
+                <a href="/47K212.05/stockroom_list.html" class="home__stockroom--link">
+                    <b class="home__stockroom--content">
+                        Quản lý kho hàng
+                    </b>
+                </a>
+            </div>
+            <div class="home__order">
+                <a href="/47K212.05/order_list.html" class="home__order--link">
+                    <b class="home__order--content">
+                        Quản lý đơn hàng
+                    </b>
+                </a>
+            </div>
+            <div class="home__finance">
+                <a href="/47K212.05/finance_sale.html" class="home__finance--link">
+                    <b class="home__finance--content">
+                        Quản lý tài chính
+                    </b>
+                </a>
+            </div>
+        </div>
+        <div class="list">
+            <navbar class="menu">
+                <div class="menu__list">
+                    <a href="/47K212.05/order_list.html" class="menu__link">
+                        Danh sách đơn hàng
+                    </a>
+                </div>
+                <div class="menu__create">
+                    <a href="/47K212.05/order_create.html" class="menu__link">
+                        Tạo đơn hàng
+                    </a>
+                </div>
+                <div class="menu__change">
+                    <a href="/47K212.05/order_change.html" class="menu__link">
+                        Sửa, xóa đơn hàng
+                    </a>
+                </div>
+                <div class="menu__invoice">
+                    <a href="/47K212.05/order_invoice.html" class="menu__link">
+                        Xuất hóa đơn
+                    </a>
+                </div>
+            </navbar>
+            <main class="content">
+                <div class="content__general">
+                    <div class="content__general--alllist">
+                        Tất cả đơn hàng
+                        <div class="content__general--allist--line"></div>
+                    </div>
+                    <div class="content__general--transaction">Đang giao dịch</div>
+                </div>
+                <div class="content__line"></div>
+                <div class="content__infor">
+                    <div class="content__filter">
+                        Lọc đơn hàng
+                        <i class="fa-solid fa-filter"></i>
+                    </div>
+                    <div class="content__status">
+                        Trạng thái
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="content__deleted">Đơn hàng đã xóa</div>
+                    <div class="content__change">Đơn hàng đã sửa</div>
+                    <div class="content__search">
+                        <i class="content__search--icon fa-solid fa-magnifying-glass" style="color: #8cb1f3;"></i>
+                        <input type="text" placeholder="Tìm kiếm đơn hàng" class="content__search--infor">
+                    </div>
+                </div>
+                <table class="table">
+                    <thead class="table__title">
+                        <tr class="table__title--up">
+                            <th class="table__title--id">Mã đơn hàng</th>
+                            <th class="table__title--datecreate">Ngày tạo đơn</th>
+                            <th class="table__title--name">Tên khách hàng</th>
+                            <th class="table__title--status">Trạng thái đơn hàng</th>
+                            <th class="table__title--change">Sửa</th>
+                            <th class="table__title--delete">Xóa</th>
+                            <th class="table__title--value">Giá trị đơn hàng</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table__content">
+                        <tr class="table__content--up">
+                            <td>*000011</td>
+                            <td>22/02/2023</td>
+                            <td class="table__content--name">Nguyễn Vũ Nguyên Khang</td>
+                            <td class="table__content--status">Đang giao dịch</td>
+                            <td><i class="fa-solid fa-pen-to-square"></i></td>
+                            <td><i class="fa-solid fa-trash"></i></td>
+                            <td class="table__content--price">10.100.000</td>
+                        </tr>
+                        <tr>
+                            <td>*000010</td>
+                            <td>19/02/2023</td>
+                            <td class="table__content--name">Nguyễn Kim Toàn</td>
+                            <td class="table__content--status">Hoàn thành</td>
+                            <td><i class="table__content--hidden fa-solid fa-pen-to-square"></i></td>
+                            <td><i class="fa-solid fa-trash"></i></td>
+                            <td class="table__content--price">9.130.000</td>
+                        </tr>
+                        <tr>
+                            <td>*000009</td>
+                            <td>15/02/2023</td>
+                            <td class="table__content--name">Phạm Thị Sương</td>
+                            <td class="table__content--status">Đang giao dịch</td>
+                            <td><i class="fa-solid fa-pen-to-square"></i></td>
+                            <td><i class="fa-solid fa-trash"></i></td>
+                            <td class="table__content--price">15.263.000</td>
+                        </tr>
+                        <tr>
+                            <td>*000008</td>
+                            <td>11/02/2023</td>
+                            <td class="table__content--name">Lê Thị Phương Yến</td>
+                            <td class="table__content--status">Đang giao dịch</td>
+                            <td><i class="fa-solid fa-pen-to-square"></i></td>
+                            <td><i class="fa-solid fa-trash"></i></td>
+                            <td class="table__content--price">4.440.000</td>
+                        </tr>
+                        <tr>
+                            <td>*000007</td>
+                            <td>09/02/2023</td>
+                            <td class="table__content--name">Trần Trương Nhật Huy</td>
+                            <td class="table__content--status">Đang giao dịch</td>
+                            <td><i class="fa-solid fa-pen-to-square"></i></td>
+                            <td><i class="fa-solid fa-trash"></i></td>
+                            <td class="table__content--price">3.300.000</td>
+                        </tr>
+                        <tr>
+                            <td>*000006</td>
+                            <td>02/02/2023</td>
+                            <td class="table__content--name">Phan Thành Khải</td>
+                            <td class="table__content--status">Hoàn thành</td>
+                            <td><i class="table__content--hidden fa-solid fa-pen-to-square"></i></td>
+                            <td><i class="fa-solid fa-trash"></i></td>
+                            <td class="table__content--price">575.000</td>
+                        </tr>
+                        <tr>
+                            <td>*000005</td>
+                            <td>25/01/2023</td>
+                            <td class="table__content--name">Nguyễn Văn An</td>
+                            <td class="table__content--status">Đã trả trước</td>
+                            <td><i class="fa-solid fa-pen-to-square"></i></td>
+                            <td><i class="table__content--hidden fa-solid fa-trash"></i></td>
+                            <td class="table__content--price">500.00</td>
+                        </tr>
+                        <tr>
+                            <td>*000004</td>
+                            <td>23/01/2023</td>
+                            <td class="table__content--name">Công ty Hòa Phát</td>
+                            <td class="table__content--status">Đang giao dịch</td>
+                            <td><i class="fa-solid fa-pen-to-square"></i></td>
+                            <td><i class="fa-solid fa-trash"></i></td>
+                            <td class="table__content--price">100.920.000</td>
+                        </tr>
+                        <tr>
+                            <td>*000003</td>
+                            <td>12/01/2023</td>
+                            <td class="table__content--name">Công ty An Hải</td>
+                            <td class="table__content--status">Hoàn thành</td>
+                            <td><i class="table__content--hidden fa-solid fa-pen-to-square"></i></td>
+                            <td><i class="fa-solid fa-trash"></i></td>
+                            <td class="table__content--price">210.915.000</td>
+                        </tr>
+                        <tr>
+                            <td>*000002</td>
+                            <td>06/01/2023</td>
+                            <td class="table__content--name">Trương Vĩnh An</td>
+                            <td class="table__content--status">Hoàn thành</td>
+                            <td><i class="table__content--hidden fa-solid fa-pen-to-square"></i></td>
+                            <td><i class="fa-solid fa-trash"></i></td>
+                            <td class="table__content--price">120.000</td>
+                        </tr>
+                        <tr>
+                            <td>*000001</td>
+                            <td>04/01/2023</td>
+                            <td class="table__content--name">Trần Trương Nhật Huy</td>
+                            <td class="table__content--status">Hoàn thành</td>
+                            <td><i class="table__content--hidden fa-solid fa-pen-to-square"></i></td>
+                            <td><i class="fa-solid fa-trash"></i></td>
+                            <td class="table__content--price">3.192.600</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </main>
+        </div>
+    </div>
+</body>
+</html>

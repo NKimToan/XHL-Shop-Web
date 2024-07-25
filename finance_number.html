@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="./assets/image/logo.png">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/finance_number.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quản lý tài chính-Kết xuất số lượng hàng hóa theo kỳ</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/image/logo.png" alt="Ảnh logo" class="header__logo--detail">
+        </div>
+        <div class="header__name">
+            <h1 class="header__name--common">CỬA HÀNG VẬT LIỆU XÂY DỰNG</h1>
+            <h1 class="header__name--store"><b>XUÂN HỒNG LY</b></h1>
+        </div>
+        <div class="header__user">
+            <i class="header__user--logo fa-regular fa-circle-user"></i>
+            <h3 class="header__user--name">Admin</h3>
+        </div>
+    </header>
+    <div class="main">
+        <div class="home">
+            <div class="home__head">
+                <a href="/47K212.05/home.html" class="home__head--link">
+                    <h2 class="home__head--name">Trang chủ</h2>
+                </a>
+                    <i class="home__head--icon fa-solid fa-chevron-right"></i>
+                    <h2 class="home__head--page">Quản lý tài chính</h2>
+            </div>
+            <div class="home__stockroom">
+                <a href="/47K212.05/stockroom_list.html" class="home__stockroom--link">
+                    <b class="home__stockroom--content">
+                        Quản lý kho hàng
+                    </b>
+                </a>
+            </div>
+            <div class="home__order">
+                <a href="/47K212.05/order_list.html" class="home__order--link">
+                    <b class="home__order--content">
+                        Quản lý đơn hàng
+                    </b>
+                </a>
+            </div>
+            <div class="home__finance">
+                <a href="/47K212.05/finance_sale.html" class="home__finance--link">
+                    <b class="home__finance--content">
+                        Quản lý tài chính
+                    </b>
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <navbar class="menu">
+                <div class="menu__sale">
+                    <a href="/47K212.05/finance_sale.html" class="menu__link">
+                        Kết xuất tổng tiền theo kỳ
+                    </a>
+                </div>
+                <div class="menu__number">
+                    <a href="/47K212.05/finance_number.html" class="menu__link">
+                        Kết xuất số lượng hàng hóa theo kỳ
+                    </a>
+                </div>
+            </navbar>
+            <table class="table">
+                <thead class="table__title">
+                    <tr>
+                        <th class="table__title--id">Mã hàng</th>
+                        <th class="table__title--name">Tên hàng</th>
+                        <th class="table__title--unit">ĐVT</th>
+                        <th class="table__title--sell-number">Số lượng hàng bán ra</th>
+                    </tr>
+                </thead>
+                <tbody class="table__content">
+                    <tr>
+                        <td class="table__content--id">*00001</td>
+                        <td class="table__content--name">Gạch</td>
+                        <td class="table__content--unit">Viên</td>             
+                        <td class="table__content--sell-number">8000</td>            
+                    </tr>
+                    <tr>
+                        <td class="table__content--id">*00002</td>
+                        <td class="table__content--name">Xi măng</td>
+                        <td class="table__content--unit">Bao</td>
+                        <td class="table__content--sell-number">225</td>  
+                    </tr>
+                    <tr>
+                        <td class="table__content--id">*00003</td>
+                        <td class="table__content--name">Sắt thép</td>
+                        <td class="table__content--unit">Kg</td>              
+                        <td class="table__content--sell-number">50</td>              
+                    </tr>
+                    <tr>
+                        <td class="table__content--id">*00004</td>
+                        <td class="table__content--name">Cát bê tông loại 1</td>
+                        <td class="table__content--unit">m³</td>          
+                        <td class="table__content--sell-number">100</td>    
+                    </tr>
+                    <tr>
+                        <td class="table__content--id">*00005</td>
+                        <td class="table__content--name">Đá xây dựng 1x2</td>
+                        <td class="table__content--unit">m³</td>      
+                        <td class="table__content--sell-number">100</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>    
+</body>
+</html>

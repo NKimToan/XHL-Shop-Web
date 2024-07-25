@@ -1,0 +1,128 @@
+.header {
+    justify-content: space-between;
+}
+
+.background {
+    margin-top: auto;
+} 
+
+.background__font {
+    width: 100%;
+    height: calc(100vh - 10.14rem);
+    background-size: contain;
+    opacity: 0.2;
+    margin-top: auto;
+    position: relative;
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 650px;
+    height: 300px;
+    border-radius: 50px;
+    background-color: #99E9DF;
+    display: block;
+}
+
+.login__infor {
+    margin: auto;
+    width: 340px;
+    height: 50px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #EC5534;
+}
+
+.login__infor--username {
+    box-sizing: border-box;
+    margin: 12px 75px 0 75px;
+    width: 500px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 50px;
+    padding-left: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #FAF6F6;
+}
+
+.login__infor--password {
+    margin: 20px 75px 0 75px;
+    display: inline-flex;
+    align-items: center;
+}
+.login__infor--password--content {
+    box-sizing: border-box;
+    width: 500px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 50px;
+    padding-left: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #FAF6F6;
+}
+
+.login__infor--password--eye {
+    position: absolute;
+    right: 20%;
+    z-index: 1;
+    font-size: 1.5rem;
+}
+.login__infor--button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: #3F2FF599;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 10px auto;
+}
+
+
+.login__infor--forgotpass {
+    position: absolute;
+    left: 12%;
+    bottom: 6%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FF0000;
+}
+
+
+.login__infor--zalo {
+    position: absolute;
+    right: 12%;
+    bottom: 6%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FF0000;
+    text-underline-offset: 7px;
+}
+
+.login__link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,139 @@
+.header {
+    justify-content: space-between;
+}
+
+.background {
+    margin-top: auto;
+} 
+
+.background__font {
+    width: 100%;
+    height: calc(100vh - 10.14rem);
+    background-size: contain;
+    opacity: 0.2;
+    margin-top: auto;
+    position: relative;
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 650px;
+    height: 300px;
+    border-radius: 50px;
+    background-color: #D0F3FE;
+    display: block;
+}
+
+.login__zalo {
+    margin: auto;
+    width: 140px;
+    height: 50px;
+}
+
+.login__zalo--image {
+    margin-top: 6px;
+    width: 140px;
+    height: 50px;
+}
+
+.login__zalo--telephone {
+    margin: 16px 75px 0 75px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.login__zalo--telephone--icon {
+    position: absolute;
+    left: 15%;
+    font-size: 1.5rem;
+}
+
+.login__infor--telephone--number {
+    box-sizing: border-box;
+    width: 500px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50px;
+    border-style: solid;
+    padding-left: 60px;
+    color: #808080;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight:400px;
+}
+
+.login__zalo--password {
+    margin: 16px 75px 0 75px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.login__zalo--password--icon {
+    position: absolute;
+    left: 15%;
+    font-size: 1.5rem;
+}
+
+.login__infor--password--content {
+    box-sizing: border-box;
+    width: 500px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50px;
+    border-style: solid;
+    padding-left: 60px;
+    color: #808080;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight:400px;
+}
+
+.login__zalo--button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: #0190F3;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 15px auto;
+}
+
+.login__zalo--content {
+    position: absolute;
+    left: 20%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FF0000;
+}
+
+.login__zalo--checkbox {
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+    transform: translateX(100%);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 5px;
+}
+
+.login__zalo--button-link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

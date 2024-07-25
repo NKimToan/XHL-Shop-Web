@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="./assets/image/logo.png">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/stockroom_putin.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quản lý kho hàng-Nhập hàng vào</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/image/logo.png" alt="Ảnh logo" class="header__logo--detail">
+        </div>
+        <div class="header__name">
+            <h1 class="header__name--common">CỬA HÀNG VẬT LIỆU XÂY DỰNG</h1>
+            <h1 class="header__name--store"><b>XUÂN HỒNG LY</b></h1>
+        </div>
+        <div class="header__user">
+            <i class="header__user--logo fa-regular fa-circle-user"></i>
+            <h3 class="header__user--name">Admin</h3>
+        </div>
+    </header>
+    <div class="main">
+        <div class="home">
+            <div class="home__head">
+                <a href="/47K212.05/home.html" class="home__head--link">
+                    <h2 class="home__head--name">Trang chủ</h2>
+                </a>
+                    <i class="home__head--icon fa-solid fa-chevron-right"></i>
+                    <h2 class="home__head--page">Quản lý kho hàng</h2>
+            </div>
+            <div class="home__stockroom">
+                <a href="/47K212.05/stockroom_list.html" class="home__stockroom--link">
+                    <b class="home__stockroom--content">
+                        Quản lý kho hàng
+                    </b>
+                </a>
+            </div>
+            <div class="home__order">
+                <a href="/47K212.05/order_list.html" class="home__order--link">
+                    <b class="home__order--content">
+                        Quản lý đơn hàng
+                    </b>
+                </a>
+            </div>
+            <div class="home__finance">
+                <a href="/47K212.05/finance_sale.html" class="home__finance--link">
+                    <b class="home__finance--content">
+                        Quản lý tài chính
+                    </b>
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <navbar class="menu">
+                <div class="menu__list">
+                    <a href="/47K212.05/stockroom_list.html" class="menu__link">
+                        Danh mục hàng hóa
+                    </a>
+                </div>
+                <div class="menu__putin">
+                    <a href="/47K212.05/stockroom_putin.html" class="menu__link">
+                        Nhập hàng vào
+                    </a>
+                </div>
+                <div class="menu__list-price">
+                    <a href="/47K212.05/stockroom_list-price.html" class="menu__link">
+                        Niêm yết giá
+                    </a>
+                </div>
+                <div class="menu__tracking">
+                    <a href="/47K212.05/stockroom_tracking.html" class="menu__link">
+                        Theo dõi hàng tồn kho
+                    </a>
+                </div>
+            </navbar>
+            <main class="putin">
+                <div class="putin__font">
+                    <div class="putin__font--name1">Mã hàng:</div>
+                    <input type="text" class="putin__font--input1">
+                </div>
+                <div class="putin__font">
+                    <div class="putin__font--name2">Tên hàng:</div>
+                    <input type="text" class="putin__font--input2">
+                </div>
+                <div class="putin__font">
+                    <div class="putin__font--name3">Đơn vị tính:</div>
+                    <input type="text" class="putin__font--input3">
+                </div>
+                <div class="putin__font">
+                    <div class="putin__font--name4">Số  lượng:</div>
+                    <input type="number" class="putin__font--input4">
+                </div>
+                <div class="putin__font">
+                    <div class="putin__font--name5">Đơn giá:</div>
+                    <input type="number" class="putin__font--input5">
+                </div>
+                <div class="putin__font">
+                    <div class="putin__font--name6">Thành tiền:</div>
+                    <input type="number" class="putin__font--input6">
+                </div>
+                <button class="putin__font--save">
+                    <b class="putin__font--save-type">
+                        Lưu
+                    </b>
+                </button>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

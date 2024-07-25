@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="./assets/image/logo.png">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/order_create.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quản lý đơn hàng-Tạo đơn hàng</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/image/logo.png" alt="Ảnh logo" class="header__logo--detail">
+        </div>
+        <div class="header__name">
+            <h1 class="header__name--common">CỬA HÀNG VẬT LIỆU XÂY DỰNG</h1>
+            <h1 class="header__name--store"><b>XUÂN HỒNG LY</b></h1>
+        </div>
+        <div class="header__user">
+            <i class="header__user--logo fa-regular fa-circle-user"></i>
+            <h3 class="header__user--name">Admin</h3>
+        </div>
+    </header>
+    <div class="main">
+        <div class="home">
+            <div class="home__head">
+                <a href="/47K212.05/home.html" class="home__head--link">
+                    <h2 class="home__head--name">Trang chủ</h2>
+                </a>
+                    <i class="home__head--icon fa-solid fa-chevron-right"></i>
+                    <h2 class="home__head--page">Quản lý đơn hàng</h2>
+            </div>
+            <div class="home__stockroom">
+                <a href="/47K212.05/stockroom_list.html" class="home__stockroom--link">
+                    <b class="home__stockroom--content">
+                        Quản lý kho hàng
+                    </b>
+                </a>
+            </div>
+            <div class="home__order">
+                <a href="/47K212.05/order_list.html" class="home__order--link">
+                    <b class="home__order--content">
+                        Quản lý đơn hàng
+                    </b>
+                </a>
+            </div>
+            <div class="home__finance">
+                <a href="/47K212.05/finance_sale.html" class="home__finance--link">
+                    <b class="home__finance--content">
+                        Quản lý tài chính
+                    </b>
+                </a>
+            </div>
+        </div>
+        <div class="order">
+            <navbar class="menu">
+                <div class="menu__list">
+                    <a href="/47K212.05/order_list.html" class="menu__link">
+                        Danh sách đơn hàng
+                    </a>
+                </div>
+                <div class="menu__create">
+                    <a href="/47K212.05/order_create.html" class="menu__link">
+                        Tạo đơn hàng
+                    </a>
+                </div>
+                <div class="menu__change">
+                    <a href="/47K212.05/order_change.html" class="menu__link">
+                        Sửa, xóa đơn hàng
+                    </a>
+                </div>
+                <div class="menu__invoice">
+                    <a href="/47K212.05/order_invoice.html" class="menu__link">
+                        Xuất hóa đơn
+                    </a>
+                </div>
+            </navbar>
+            <main class="content">
+                <div class="content__order">
+                    <div class="content__order--id">
+                        Mã đơn hàng:
+                    </div>
+                    <input type="text" class="id__input">
+                    <div class="content__order--date">
+                        Ngày tạo đơn:
+                    </div>
+                    <input type="date" class="date__input">
+                </div>
+                <div class="content__order--choose">
+                    <div class="content__order--choose--name">Chọn hàng:</div>
+                    <input type="text" class="input__putin" placeholder="Chọn/nhập tên hàng hóa">
+                    <!-- Đề xuất hàng hóa -->
+                    <div class="propose">
+                        <h3 class="propose__name">Tên hàng</h3>
+                        <ul>
+                            <li class="propose__product">Gạch men 60x60</li>
+                            <li class="propose__product">Gạch ốp tường 30x60</li>
+                            <li class="propose__product">Gạch thẻ</li>
+                            <li class="propose__product">Đá granite</li>
+                            <li class="propose__product">Cát xây</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content__order--number">
+                    <span class="content__order--number--name">Số lượng:</span>
+                    <input type="text" class="content__order--number--input">
+                </div>
+                <div class="content__order--customer--infor">
+                    <div class="content__order--customer--title">Thông tin khách hàng</div>
+                    <div class="content__order--customer--line"></div>
+                </div>
+                <div class="content__order--customer">
+                    <div class="content__order--customer--name">Họ tên:</div>
+                    <input type="text" class="content__order--customer--input">
+                </div>
+                <div class="content__order--customer">
+                    <div class="content__order--customer--address">Địa chỉ:</div>
+                    <input type="text" class="content__order--address--input">
+                </div>
+                <div class="content__order--customer">
+                    <div class="content__order--customer--telephone">SĐT:</div>
+                    <input type="text" class="content__order--telephone--input">
+                </div>
+                <div class="content__order--customer">
+                    <div class="content__order--customer--discount">
+                        <div class="discount__name">Chiết khấu:</div>
+                        <input type="number" class="discount__input">
+                    </div>
+                    <div class="content__order--customer--tax">
+                        <div class="tax__name">Thuế AVT:</div>
+                        <input type="number" class="tax__input">
+                    </div>
+                </div>
+                <div class="content__order--end">
+                    <div class="content__order--end--sum">
+                        <div class="sum__name">Tổng tiền:</div>
+                        <input type="number" class="sum__input">
+                    </div>
+                    <div class="content__order--end--add">+ Thêm</div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

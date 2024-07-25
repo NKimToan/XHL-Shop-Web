@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="./assets/image/logo.png">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/order_invoice.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quản lý đơn hàng-Xuất hóa đơn</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/image/logo.png" alt="Ảnh logo" class="header__logo--detail">
+        </div>
+        <div class="header__name">
+            <h1 class="header__name--common">CỬA HÀNG VẬT LIỆU XÂY DỰNG</h1>
+            <h1 class="header__name--store"><b>XUÂN HỒNG LY</b></h1>
+        </div>
+        <div class="header__user">
+            <i class="header__user--logo fa-regular fa-circle-user"></i>
+            <h3 class="header__user--name">Admin</h3>
+        </div>
+    </header>
+    <div class="main">
+        <div class="home">
+            <div class="home__head">
+                <a href="/47K212.05/home.html" class="home__head--link">
+                    <h2 class="home__head--name">Trang chủ</h2>
+                </a>
+                    <i class="home__head--icon fa-solid fa-chevron-right"></i>
+                    <h2 class="home__head--page">Quản lý đơn hàng</h2>
+            </div>
+            <div class="home__stockroom">
+                <a href="/47K212.05/stockroom_list.html" class="home__stockroom--link">
+                    <b class="home__stockroom--content">
+                        Quản lý kho hàng
+                    </b>
+                </a>
+            </div>
+            <div class="home__order">
+                <a href="/47K212.05/order_list.html" class="home__order--link">
+                    <b class="home__order--content">
+                        Quản lý đơn hàng
+                    </b>
+                </a>
+            </div>
+            <div class="home__finance">
+                <a href="/47K212.05/finance_sale.html" class="home__finance--link">
+                    <b class="home__finance--content">
+                        Quản lý tài chính
+                    </b>
+                </a>
+            </div>
+        </div>
+        <div class="invoice">
+            <navbar class="menu">
+                <div class="menu__list">
+                    <a href="/47K212.05/order_list.html" class="menu__link">
+                        Danh sách đơn hàng
+                    </a>
+                </div>
+                <div class="menu__create">
+                    <a href="/47K212.05/order_create.html" class="menu__link">
+                        Tạo đơn hàng
+                    </a>
+                </div>
+                <div class="menu__change">
+                    <a href="/47K212.05/order_change.html" class="menu__link">
+                        Sửa, xóa đơn hàng
+                    </a>
+                </div>
+                <div class="menu__invoice">
+                    <a href="/47K212.05/order_invoice.html" class="menu__link">
+                        Xuất hóa đơn
+                    </a>
+                </div>
+            </navbar>
+            <main class="content">
+                <div class="content__title">
+                    <img src="./assets/image/logo.png" alt="logo" class="content__title--logo">
+                    <div class="content__infor">
+                        <div class="content__infor--name">
+                            <b class="content__infor--name--1">CỬA HÀNG VẬT LIỆU XÂY DỰNG</b>
+                            <b class="content__infor--name--2">XUÂN HỒNG LY</b>
+                        </div>
+                        <span class="content__infor--address--telephone">Địa chỉ: 224 Dũng Sĩ Thanh Khê-Thanh Khê-Đà Nẵng - SĐT: 0935 367 893</span>
+                        <b class="content__infor--invoice">HÓA ĐƠN BÁN HÀNG</b>
+                    </div>
+                </div>
+                <div class="content__basic">
+                    <h4 class="content__basic--id">Mã hóa đơn:<span class="dotted__id"></span></h4>
+                    <h4 class="content__basic--date">Ngày:..../..../......</h4>
+                    <button class="content__basic--print">In hóa đơn</button>
+                </div>
+                <div class="content__customer">
+                    <h4 class="content__customer--name">Khách hàng:<span class="dotted__name"></span></h4>
+                    <h4 class="content__customer--telephone">Số điện thoại:<span class="dotted__telephone"></span></h4>
+                </div>
+                <h4 class="content__addtress">Địa chỉ:<span class="dotted__address"></span></h4>
+                <table class="table">
+                    <thead class="table__head">
+                        <tr class="table__head--title">
+                            <th class="table__head--title--numerical">STT</th>
+                            <th class="table__head--title--name">Tên hàng</th>
+                            <th class="table__head--title--unit">ĐVT</th>
+                            <th class="table__head--title--number">Số lượng</th>
+                            <th class="table__head--title--price">Đơn giá</th>
+                            <th class="table__head--title--total">Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table__body">
+                        <tr class="table__body--data">
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="table__body--data">
+                            <td>2</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="table__body--data">
+                            <td>3</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="table__body--data">
+                            <td>4</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="table__body--sum">
+                            <td></td>
+                            <td>Tổng</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="content__signature">
+                    <span class="content__signature--customer">Người mua hàng(ký, họ tên)</span>
+                    <span class="content__signature--manager">Người lập phiếu(ký, họ tên)</span>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
